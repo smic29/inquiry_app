@@ -8,6 +8,12 @@ gem "rails", "~> 7.1.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+# All gems needed for bootstrap integration
+gem 'bootstrap', '~> 5.3', '>= 5.3.2'
+gem 'dartsass-sprockets'
+gem 'jquery-rails'
+gem 'popper_js', '~> 2.11.8'
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
