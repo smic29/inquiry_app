@@ -6,9 +6,10 @@
 
   <div id="inquiries" class="container">
     <div class="container d-flex shadow-sm rounded p-2 user-select-none">
-      <strong class="col-4">Type</strong>
-      <strong class="col-4">Name</strong>
-      <strong class="col-4">Budget</strong>
+      <strong class="col-3">Type</strong>
+      <strong class="col-3">Name</strong>
+      <strong class="col-3">Budget</strong>
+      <strong class="col-3">Time since</strong>
     </div>
     <% @inquiries.each do |inquiry| %>
       <%= render inquiry %>

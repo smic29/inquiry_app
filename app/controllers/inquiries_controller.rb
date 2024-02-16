@@ -3,7 +3,7 @@ class InquiriesController < ApplicationController
 
   # GET /inquiries or /inquiries.json
   def index
-    @inquiries = Inquiry.all
+    @inquiries = Inquiry.all.order(:updated_at)
   end
 
   # GET /inquiries/1 or /inquiries/1.json
