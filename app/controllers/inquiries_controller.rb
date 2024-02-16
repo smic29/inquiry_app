@@ -8,6 +8,9 @@ class InquiriesController < ApplicationController
 
   # GET /inquiries/1 or /inquiries/1.json
   def show
+    @next_inquiry_id = Inquiry.where("id > ?", @inquiry.id).order(:id).first
+
+    @next_inquiry_id ||= Inquiry.first
   end
 
   # GET /inquiries/new
