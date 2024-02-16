@@ -12,7 +12,7 @@
   </div>
 
   <div class="col-3">
-    <%= inquiry.created_at %>
+    <%= time_ago_in_words(inquiry.created_at).capitalize %>
   </div>
 
   <%= link_to "More", inquiry, class:"btn btn-outline-secondary position-absolute top-50 end-0 translate-middle rounded-pill" %>
