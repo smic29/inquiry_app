@@ -26,3 +26,8 @@ A simple Ruby on Rails project for Avion School to show basic CRUD functionaliti
       }
     </script>
   ```
+- In deplying Ruby on Rails project: If there's already a schema and migration files present, and you're unable to access the page's SSH, it's better to have these on your build file:
+```sh
+bundle exec rails db:schema:load
+bundle exec rails db:migrate
+```
