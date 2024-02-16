@@ -1,27 +1,15 @@
-<div id="<%= dom_id inquiry %>">
-  <p>
-    <strong>Name:</strong>
+<div id="<%= dom_id inquiry %>" class="container d-flex shadow rounded p-3 pt-4 mb-3 mt-2 position-relative">
+  <div class="col-4">
+    <%= inquiry.inquiry_type.upcase %>
+  </div>
+
+  <div class="col-4">
     <%= inquiry.name %>
-  </p>
+  </div>
 
-  <p>
-    <strong>Email:</strong>
-    <%= inquiry.email %>
-  </p>
+  <div class="col-4">
+    $ <%= number_with_delimiter(inquiry.budget) %>
+  </div>
 
-  <p>
-    <strong>Description:</strong>
-    <%= inquiry.description %>
-  </p>
-
-  <p>
-    <strong>Budget:</strong>
-    <%= inquiry.budget %>
-  </p>
-
-  <p>
-    <strong>Inquiry type:</strong>
-    <%= inquiry.inquiry_type %>
-  </p>
-
+  <%= link_to "More", inquiry, class:"btn btn-outline-secondary position-absolute top-50 end-0 translate-middle rounded-pill" %>
 </div>

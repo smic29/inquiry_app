@@ -1,14 +1,21 @@
-<p style="color: green"><%= notice %></p>
+<div class="container">
 
-<h1>Inquiries</h1>
+  <p style="color: green"><%= notice %></p>
 
-<div id="inquiries">
-  <% @inquiries.each do |inquiry| %>
-    <%= render inquiry %>
-    <p>
-      <%= link_to "Show this inquiry", inquiry %>
-    </p>
-  <% end %>
+  <h1 class="mt-5 mb-5">Inquiry List</h1>
+
+  <div id="inquiries" class="container">
+    <div class="container d-flex shadow-sm rounded p-2 user-select-none">
+      <strong class="col-4">Type</strong>
+      <strong class="col-4">Name</strong>
+      <strong class="col-4">Budget</strong>
+    </div>
+    <% @inquiries.each do |inquiry| %>
+      <%= render inquiry %>
+      
+    <% end %>
+  </div>
+
+  <%= link_to "New inquiry", new_inquiry_path, class:"btn btn-outline-success mt-5" %>
+
 </div>
-
-<%= link_to "New inquiry", new_inquiry_path %>
