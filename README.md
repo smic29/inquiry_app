@@ -2,8 +2,8 @@
 
 A simple Ruby on Rails project for Avion School to show basic CRUD functionalities in rails.
 
-## Initial Commit
-- Added CRUD operations via Scaffold.
+## Current Deployment
+- [Render](https://mysite-ii1w.onrender.com/) || 02/16/24
 
 ## TODO
   - [x] Implement Bootstrap for styling
