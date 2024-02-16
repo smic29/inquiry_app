@@ -1,11 +1,9 @@
-<h1 class="mb-5">New inquiry</h1>
-
 <div class="container">
-  <%= render "form", inquiry: @inquiry %>
-</div>
-
-<br>
-
-<div>
-  <%= link_to "Back to inquiries", inquiries_path %>
+  <h1 class="mb-5 mt-5">New Inquiry</h1>
+  <div class="container">
+    <%= render "form", inquiry: @inquiry %>
+  </div>
+  <div class="mt-5">
+    <%= link_to "Go to Inquiry List", inquiries_path, class:"btn btn-outline-secondary" %>
+  </div>
 </div>
