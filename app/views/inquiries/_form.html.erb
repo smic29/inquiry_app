@@ -17,7 +17,7 @@
       <%= form.label :name %>
     </div>
     <div class="form-floating mb-3">
-      <%= form.text_field :email, class:"form-control", placeholder:"test" %>
+      <%= form.text_field :email, class:"form-control", placeholder:"test", required: true %>
       <%= form.label :email %>
     </div>
     <div class="form-floating mb-3">
@@ -27,7 +27,7 @@
     <div class="row">
       <div class="col">
         <div class="form-floating mb-3">
-          <%= form.number_field :budget, class:"form-control", placeholder:"test" %>
+          <%= form.number_field :budget, class:"form-control", placeholder:"test", min: 0, max: 100000000 %>
           <%= form.label :budget %>
         </div>
       </div>
@@ -36,7 +36,7 @@
           <%= form.select :inquiry_type, 
             Inquiry.inquiry_types.keys.map { |key| [key.humanize, key] }, 
             { prompt: "Select a type" }, 
-            class: "form-select" %>
+            class: "form-select", required: true %>
           <%= form.label :inquiry_type, style: "display: block", class:"form-label" %>
         </div>
       </div>
