@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href=<%= root_path %>>
+        <%= image_tag("Company_Logo-logoOnly-removebg.png", class: "d-inline-clock align-text-top", width: 50, height: 40) %>
+        Inquiry Form
+    </a>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" href=<%= inquiries_path %>>List</a>
+        </li>
+    </ul>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+    </form>
+  </div>
+</nav>
