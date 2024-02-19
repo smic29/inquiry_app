@@ -14,6 +14,8 @@
   <div class="col-3">
     <%= time_ago_in_words(inquiry.created_at).capitalize %>
   </div>
-
-  <%= link_to "More", inquiry, class:"btn btn-outline-secondary position-absolute top-50 end-0 translate-middle rounded-pill" %>
+    <a href=<%= inquiry_path(inquiry) %> class="position-absolute top-50 end-5 translate-middle">
+      <i class="bi bi-three-dots"></i>
+    </a>
+  <%# <%= link_to "More", inquiry, class:"btn btn-outline-secondary position-absolute top-50 end-0 translate-middle rounded-pill" %> 
 </div>
